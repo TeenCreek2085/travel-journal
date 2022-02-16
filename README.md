@@ -1,6 +1,7 @@
 # My travel journal
+Мой первый проект на React.js
 
-Посмотреть проект можно по этой ссылке: https://blogaboutjournal.netlify.app/
+Посмотреть можно по этой ссылке: https://blogaboutjournal.netlify.app/
 
 ## Getting Started with Create React App
 
