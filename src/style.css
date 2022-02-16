@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2b283a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 50px;
+  padding: 15px 40px;
+  background-color: #f55a5a;
+}
+
+.header__text {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14.5px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+}
+
+/* == Main == */
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19px;
+  min-width: 320px;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-bottom: 1px solid rgba(43, 40, 58, 0.2);
+}
+
+@media (max-width: 440px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card__img {
+    align-self: flex-start;
+  }
+}
+
+.card__container > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card__location {
+  position: relative;
+  margin: 0;
+  margin-left: 15px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.card__location::before {
+  content: '';
+  position: absolute;
+  background-image: url('../public/images/pin.svg');
+  background-repeat: no-repeat;
+  background-size: 18px 15px;
+  top: -1.5px;
+  left: -18px;
+  width: 18px;
+  height: 15px;
+}
+
+.card__map {
+  font-size: 10.24px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #918e9b;
+}
+
+.card__map:hover,
+.card__map:active {
+  color: #f55a5a;
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.card__container > span {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.card__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 150%;
+}
